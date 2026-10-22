@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Government Scheme Recommendation Portal</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>AI Government Scheme Recommendation Portal</h1>
+    <p>Enter your details to find suitable government schemes</p>
+  </header>
+
+  <main>
+    <section class="form-card">
+      <h2>User Details</h2>
+
+      <form id="schemeForm">
+        <label for="age">Age</label>
+        <input type="number" id="age" min="1" max="120" required />
+
+        <label for="income">Annual Family Income (Rs.)</label>
+        <input type="number" id="income" min="0" required />
+
+        <label for="state">State</label>
+        <select id="state" required>
+          <option value="">Select State</option>
+          <option>Maharashtra</option>
+          <option>Gujarat</option>
+          <option>Karnataka</option>
+          <option>Uttar Pradesh</option>
+          <option>Delhi</option>
+          <option>Other</option>
+        </select>
+
+        <label for="occupation">Occupation</label>
+        <select id="occupation" required>
+          <option value="">Select Occupation</option>
+          <option>Student</option>
+          <option>Farmer</option>
+          <option>Self-Employed</option>
+          <option>Small Business Owner</option>
+          <option>Salaried Employee</option>
+          <option>Unemployed</option>
+          <option>Other</option>
+        </select>
+
+        <label for="education">Education Level</label>
+        <select id="education" required>
+          <option value="">Select Education</option>
+          <option>School</option>
+          <option>Undergraduate</option>
+          <option>Postgraduate</option>
+          <option>Other</option>
+        </select>
+
+        <button type="submit">Find Eligible Schemes</button>
+      </form>
+    </section>
+
+    <section id="results"></section>
+  </main>
+
+  <footer>
+    <p>
+      Demo project. Always confirm eligibility and application steps on the
+      official government portal before applying.
+    </p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
